@@ -1,0 +1,65 @@
+.container {
+  @apply flex w-full flex-col-reverse items-center gap-x-5 bg-white p-0 sm:w-auto sm:rounded-2xl md:flex-row md:p-5;
+
+  .formContainer {
+    @apply w-96 px-8 py-8 sm:py-6 md:py-0;
+
+    .title {
+      @apply text-4xl font-bold text-charcoal-grey sm:text-5xl;
+    }
+
+    .desc {
+      @apply my-5 text-sm;
+    }
+
+    .listContainer {
+      @apply flex flex-col gap-y-3;
+
+      .item {
+        @apply relative pl-8 text-sm;
+
+        &:before {
+          @apply absolute bottom-0 left-0 top-0 my-auto inline-block h-4 w-4 bg-[url("../../assets/images/icon-list.svg")] bg-contain bg-center bg-no-repeat content-[""];
+        }
+      }
+    }
+
+    .input {
+      @apply mt-7;
+
+      .labelContainer {
+        @apply flex justify-between text-xs font-semibold;
+
+        span {
+          @apply hidden text-red-400;
+        }
+      }
+
+      input {
+        @apply mt-2 block w-full rounded border px-4 py-3 text-sm outline-none focus:border-charcoal-grey;
+      }
+
+      &.error {
+        .labelContainer span {
+          @apply block;
+        }
+
+        input {
+          @apply border-red-400 bg-red-50 text-red-400;
+        }
+      }
+    }
+  }
+
+  .imgContainer {
+    @apply w-full md:w-80;
+
+    .desktop {
+      @apply hidden md:block;
+    }
+
+    .mobile {
+      @apply block w-full md:hidden;
+    }
+  }
+}

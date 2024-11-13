@@ -1,0 +1,23 @@
+.container {
+  @apply flex h-screen w-full flex-col justify-between space-y-8 bg-white px-8 py-12 sm:h-auto sm:w-[30rem] sm:justify-start sm:rounded-2xl sm:px-14;
+
+  .upperSection {
+    @apply mt-8 space-y-8 sm:mt-0;
+
+    img {
+      @apply w-14;
+    }
+
+    h1 {
+      @apply text-4xl font-bold sm:text-5xl;
+    }
+
+    p {
+      @apply text-sm;
+
+      .bold {
+        @apply font-bold;
+      }
+    }
+  }
+}
