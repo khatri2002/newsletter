@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SignUpBox from "../../components/sign-up-box/SignUpBox";
 import SuccessBox from "../../components/success-box/SuccessBox";
-import styles from "./Home.module.scss";
+import styles from "./Home.module.css";
 import * as EmailValidator from "email-validator";
 
 const Home = () => {

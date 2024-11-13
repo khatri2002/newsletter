@@ -1,5 +1,5 @@
 import { ButtonProps } from "../../types";
-import styles from "./Button.module.scss";
+import styles from "./Button.module.css";
 
 const Button = ({ title, onClick }: ButtonProps) => {
   return (

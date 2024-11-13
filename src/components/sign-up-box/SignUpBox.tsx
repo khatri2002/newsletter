@@ -1,4 +1,4 @@
-import styles from "./SignUpBox.module.scss";
+import styles from "./SignUpBox.module.css";
 import IllustrationDesktop from "../../assets/images/illustration-sign-up-desktop.svg";
 import IllustrationMobile from "../../assets/images/illustration-sign-up-mobile.svg";
 import classNames from "classnames";

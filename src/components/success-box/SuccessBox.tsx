@@ -1,4 +1,4 @@
-import styles from "./SuccessBox.module.scss";
+import styles from "./SuccessBox.module.css";
 import IconSuccess from "../../assets/images/icon-success.svg";
 import Button from "../button/Button";
 import { SuccessBoxProps } from "../../types";
